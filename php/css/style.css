@@ -1,0 +1,704 @@
+ /* CCS PARA TODO EL STYLE */
+/*--------------------------------------------------------------------------------*/
+
+*{ /*margenes y caja de texto para todo la pagina*/
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{ /*cuerpo de trabajo*/
+  background-color: #fffdf7;
+  height: 100% !important; /*altura*/
+  width: 100% !important; /*ancho*/
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.carrito{ /*logo de la campana*/
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+.contenidoFormularios{ /*sub menu de body, color y forma de fondo*/
+
+  background-color: white; /*agrega color de fondo*/
+  margin: 14px auto;
+  box-shadow: 0px 1px 5px 5px rgba(204,204,204,1);
+  padding:10px;
+  height: auto; /*altura*/
+  width: 98%; /*ancho*/
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.eliminarImagen{
+    display: none;
+}
+
+.checkServices{
+  width: 47% !important;
+}
+
+.servicios{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
+.contenido{
+  display: flex;
+}
+
+.menuMobile{
+  display: none;
+}
+
+
+
+.contenido .menu{ 
+  width: auto; 
+  background: #1c1c1c;   
+}
+
+
+
+.contenido .logo{ 
+  text-align: center;
+  padding: 50px;
+  width: auto; 
+}
+
+
+
+.contenido .menu li{  
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    background: #1c1c1c;   
+    border-bottom: 2px solid #1c1c1c;
+    padding: 5px 5px;
+    align-items: center; 
+    text-align: center;
+    border-radius: 2pc red;
+}
+
+
+
+.contenido .menu li:hover{ 
+  background: #ffffff; 
+  color: blue;
+}
+
+.contenido .menu li a{ 
+  color: #fff; 
+  font-size: 15px; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+.contenido .menu li a:hover{ 
+  color: black;
+}
+
+.contenido .menu li a:active{ 
+  color: #fe0404;
+}
+
+
+
+.contenido .menu i{
+    margin-right: 10px auto;
+    width: 10px; 
+    color: white;
+}
+
+.contenido .formularios { 
+  width: 100%; 
+  background-color: #1c1c1c;
+}
+
+
+
+.cabecera{ 
+  background: #1c1c1c; 
+  padding: 3px; 
+  width: auto; 
+  height: auto; 
+  box-shadow: -1px 1px 2px 2px rgba(199,199,199,1); 
+}
+
+h2{
+  color: #fff;
+}
+
+.cabecera nav{ 
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align:center;
+}
+
+.notificaciones{ 
+  width: 35%;
+  text-align: right;
+  border-right: 2px solid grey;
+  padding-right: 10px;
+align-content: right;
+align-items: right;
+}
+
+.menuConfiguracion{
+  width: 5%;
+  align-items: center;
+  text-align: center;
+} */
+
+
+
+.contenido {
+  display: flex;
+  height: 100vh;
+}
+
+/* Menú de navegación */
+.menu {
+  width: 260px;
+  background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.menu:hover {
+  width: 300px; /* Expande el menú al pasar el mouse */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 15px 0;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Ligero brillo al pasar el mouse */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Estilo del logo */
+.logo img {
+  max-width: 100%;
+}
+
+/* Sección de formularios */
+.formularios {
+  flex: 1;
+  padding: 20px;
+  background-color: #1e1e1e;
+  overflow-y: auto;
+  transition: background 0.3s;
+}
+
+/* Encabezado */
+.cabecera nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Permite que el nav use todo el espacio disponible */
+}
+
+.menuConfiguracion {
+  margin-left: auto; /* Empuja el contenedor a la derecha */
+}
+
+/* Opcional: para mejorar el aspecto del dropdown */
+.nav-item {
+  position: relative; /* Asegúrate de que el dropdown esté posicionado correctamente */
+}
+
+
+.cabecera h2 {
+  margin: 0;
+  color: #00bcd4; /* Color vibrante para el título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menuMobile, .notificaciones, .menuConfiguracion {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #00bcd4; /* Iconos en color vibrante */
+}
+
+/* Dropdown del menú de configuración */
+.dropdown-menu {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background 0.3s;
+  padding: 10px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 255, 255, 0.1); /* Brillo al pasar el mouse */
+}
+
+/* Iconos */
+.fas, .far {
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+      width: 100%;
+      height: auto;
+  }
+
+  .contenido {
+      flex-direction: column;
+  }
+}
+
+
+
+
+
+footer{
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer p{
+  text-align: center;
+  padding: 3px !important;
+  color: black;
+  font-size: 12px;
+  margin: 0;
+  background: #c69e4e; /*color de fondo*/
+  padding: 3px; /*relacion con el borde*/
+  width: 100%; /*anchura*/
+  height: auto; /*altura*/
+  box-shadow: -1px 1px 2px 2px rgba(199,199,199,1); /*efecto sobra*/
+  }
+
+/*--------------------------------------------------------------------------------*/
+
+.file-input{ /*configuracion de cuadross de entrada */
+  background: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.file-input > .buttonf { /*configuracion de cuadros de entrada del boton*/
+  display: inline-block;
+  cursor: pointer;
+  background: #eeeeee;
+  padding: 8px 16px;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.file-input:hover > .buttonf {
+  background: dodgerblue;
+  color: white;
+}
+
+.file-input > .label {
+  color: #333333;
+  white-space: nowrap;
+  opacity: .3;
+}
+
+.file-input.-chosen > .label {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+table{ /*expande la tabla al tamaño de la pagina*/
+    width: 100% !important;
+}
+
+table th{ /*agrega color de fondo al encabezado de la tabla*/
+  background: #00bcd4;
+  color: white; /*color del texto*/
+  padding: 5px;
+}
+
+.page-item.active .page-link{ /*color de los botones numeros en siguente abajo*/
+  background: #00bcd4 !important;
+  border-color: #8AC4D0 !important;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.calendar-day, .calendar-day-head{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.calendar-day-head{
+    background: #183152;
+    color: white;
+}
+
+.actual{
+    color: black;
+    background: red;
+    width: 20px;
+    text-align: center;
+    border-radius: 110px;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.puntoVerde{  
+    background: #29bc29;
+    border-radius: 50px;
+    border-radius: 360px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+.puntoRojo{ 
+    background: red;
+    border-radius: 360px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+.puntoVerde1{  
+    background: #29bc29;
+    border-radius: 50px;
+    border-radius: 360px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+.puntoRojo1{ 
+    background: red;
+    border-radius: 360px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.day-number {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.not-work{
+  color: red;
+}
+.not-work-holiday{
+  color: red;
+}
+.Expli{
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #F3CA4C;
+  padding: 5px
+}
+.flex{
+  display: flex;
+  flex-wrap:wrap;
+}
+.check-especialidad{
+  width: 25%;
+  border: 1px solid #F3CA4C;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.validar{
+    color: red;
+    width: 100%;
+    float: right;
+    padding-right: 5px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.btnEditar{
+  display: none;
+}
+.table td{
+    padding: .35rem !important;
+}
+
+.loader {
+  position: fixed;
+  top:0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 4;
+  display: flex;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.fechasHoras{
+  width: 70%;
+  text-align: right;
+  color: white
+}
+.fechasHoras p{
+  margin: 0px;
+}
+.fechaDisponible{
+  background:black;
+  font-weight: bold;
+  color: white
+}
+
+.nombreEspecialidad{
+      width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.circuloFecha{
+  background: #F3CA4C;
+  border-radius: 80px;
+  margin: 0;
+  padding:5px; 
+    width: 20%;
+    text-align: center;
+}
+
+.calendar-day span{
+  cursor: pointer;
+}
+
+.CellWithComment{
+      position: relative;
+    font-size: 14px;
+}
+
+.CellComment{    
+  border:1px;  
+  padding:1px;
+  
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.botonesEdi{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalBuscar{
+  max-width: 1000px !important
+}
+
+.flexPermiso strong{
+  width: 30%;
+}
+
+.flexPermiso{
+  border-bottom: 1px solid gainsboro;    
+  margin: auto !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuPermiso li{
+  display: block;
+}
+
+.containerPermiso{
+  width: 80%;
+  margin: auto;
+}
+
+.containerInicio{
+  width: 50% !important;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Cancelada{
+  background: red;
+  padding: 3px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.Pendiente{
+  background: green;
+  padding: 3px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.flexibleBotones{
+  display: flex;
+}
+
+.flex2{
+  display: flex;
+}
+
+.btnImprimir{
+  width: 49%;
+  padding: 3px !important;
+  font-size:13px;
+  margin-right: 7px !important;
+}
+
+.flexImpri{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;  
+}
+
+.buscarCarrito{
+    width: 60%;
+    margin-right: 1.5%;
+    border-right: 1px solid #F3CA4C;
+    padding-right: 1.5%;
+}
+
+.carritoAdd{
+  width: 37%;
+}
+
+.centrado{
+  text-align: center;
+}
+
+.modalFarmacia{
+  max-width: 80% !important
+}
+
+.tablaItem input{
+  text-align: right;
+  width: 70px;
+}
+
+.bombillo{
+  color: #ff0000 !important;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+.sombra {
+    background: white;
+    box-shadow: 0px 0px 2px #b9b9b9;
+    padding: 5px;
+    width: 96%;
+    margin-bottom: 10px;
+}
+.ventas {
+    height: 93vh;
+}
+.pedidosUsuarios {
+    width: 99%;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productosPedidos {
+    width: 70%;
+    box-shadow: 0px 0px 2px #b9b9b9;
+}
+.carrito2 {
+    width: 29%;
+    margin-left: 1%;
+}
+.itemCarrito {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 13px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btnGrisTerminar {
+    text-align: center;
+    padding: 7px;
+    background: #ff7d01;
+    border-color: #e2dfdf;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+}
+.btnImprimir{
+   text-align: center;
+    padding: 7px !important;
+    width: 100%;    
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+    background: #4faec2 !important;
+    border-color: red !important;
+    cursor: pointer;
+}
+.totalPedido {
+    display: flex;
+}
+.labelTotal {
+    width: 50%;
+}
+.valorTotalTotal {
+    width: 50%;
+    text-align: right;
+}
+.btnRojoTerminar {
+    background: red !important;
+    border-color: red !important;
+    cursor: pointer;
+}
