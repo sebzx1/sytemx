@@ -3,7 +3,6 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import {init} from 'ityped';
 import React , { useEffect , useRef} from "react";
-import {AiOutlineGithub } from "react-icons/ai";
 import {AiOutlineInstagram} from "react-icons/ai";
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { AiOutlineFacebook } from 'react-icons/ai';
@@ -40,10 +39,6 @@ const Hero = () => {
         
         {/* cambiar los link */} 
         <div className="absolute link1">        
-        <a
-          href="https://github.com/sebzx1" target="_blank">
-          <AiOutlineGithub />
-        </a>
         <a
           href="https://api.whatsapp.com/send/?phone=573004755765&text&type=phone_number&app_absent=0" target="_blank">
           <AiOutlineWhatsApp />
