@@ -4,8 +4,8 @@
 ?>
 
 <?php // GUARDAR
-error_reporting(0); /*reporte de error*/
-	error_reporting(0); /*reporte de error*/
+error_reporting(1); /*reporte de error*/
+	error_reporting(1); /*reporte de error*/
 //error_reporting(E_ALL);
 
 	//invoca y almacena en la variable el valor
