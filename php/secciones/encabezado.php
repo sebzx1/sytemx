@@ -108,9 +108,6 @@ require "config/conexion.php"; /*invoca el archivo php conexion con la bd*/
 
           <h2>SystemX - Developer</h2>
 
-          
-
-          <div class="notificaciones"><i class="fas fa-bell"></i></div>
 
           <div class="menuConfiguracion">
 
