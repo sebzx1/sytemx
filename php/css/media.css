@@ -1,0 +1,60 @@
+ /* CCS MEDIA Responsible adaptacion a varias pantallas */
+ /*consultas de medios son una técnicapara entregar una hoja de estilo personalizada a diferentes dispositivos*/
+/*--------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+  .contenido .menu {
+      display: none;
+    }
+    .menuMobile {
+      display: block;
+    }
+    .contenido .formularios {
+      width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+    .contenido .menu {
+      display: none;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media screen and (min-width:300px) and (max-width:800px) {
+.body{
+font-size:0.8em;
+}
+}
+
+/*--------------------------------------------------------------------------------*/
+
+@media handheld{
+  .body{
+width:98%;font-family:Verdana;font-size:16px;
+} 
+}

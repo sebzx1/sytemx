@@ -1,0 +1,152 @@
+ /* CCS PARA EL LOGIN */
+/*--------------------------------------------------------------------------------*/
+
+.login-box { /* container o caja*/
+    margin-top: 75px;
+    height: auto;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0px 6px 9px rgb(138 100 18), 4px 10px 15px rgb(179 148 83);
+}
+
+.login-title { /* titulo del login */
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #9a7324;
+}
+
+.login-form { /* margenes del form*/
+    margin-top: 25px;
+    text-align: left;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+img{ /* imagen del login*/
+width: 280px;
+height: auto;
+max-width: 100%;
+display:block;
+margin:auto
+}
+
+/*--------------------------------------------------------------------------------*/
+
+input[type=text] { /*entrada del correo*/
+    background-color: #c1ac83;
+    border: inset;
+    border-bottom: 3px solid #9b6f17;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: black;
+
+}
+
+input[type=password] { /*entrada de la contraseña*/
+    background-color: #c1ac83;
+    border: none;
+    border-bottom: 3px solid #9b6f17;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+input:focus { /*entrada del formulario*/
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+.form-group { /*margenes de los cuadros de texto*/
+    margin-bottom: 40px;
+    outline: 0px;
+}
+
+.form-control:focus { /*color de fondo y de los cuadros de texto, al estar en el cuadro este cambia*/
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 4px solid 2f2084;
+    outline: 0;
+    background-color: #a8a7c4;
+    color: #ECF0F5;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+label { /*cuadros de texto */
+    margin-bottom: 0px;
+}
+
+.form-control-label { /*cuadros de texto de correo y contraseña*/
+   font-size: 20px;
+    color: #9a7324;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-key { /*accion al presional el boton*/
+    height: 100px;
+    font-size: 90px;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-outline-primary { /*boton de ingresar*/
+    background:#c1ac83;;
+    border-color: #9b6f17;
+    color: #2f2084;
+    border-radius: 9px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover { /*accion al pasar el raton por el boton*/
+    background-color: #2d2281;
+    right: 0px;
+}
+
+.login-btm {
+    float: left;
+}
+
+.login-button { /*alineacion del boton*/
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.login-text {
+    text-align: left;
+    padding-left: 0px;
+    color: #A2A4A4;
+}
+
+.loginbttm {
+    padding: 0px;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.mensajeContra{ /* mensaje de usuario y contraseña mala*/
+    text-align: center;
+    font-size: 15px;
+    padding: 30px;
+    color: red;
+}
+
+/*--------------------------------------------------------------------------------*/
